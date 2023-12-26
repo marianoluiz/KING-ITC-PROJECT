@@ -1,0 +1,38 @@
+:root{
+  --bg-color: #F0EFF4;
+  --main-color: #2541B2;
+  --2nd-main-color: #FAB3A9;
+  --3rd-main-color: #F7F06D;
+  --4th-main-color: #4763cf;
+  --text-color: #343A40;
+  --2nd-text-color: #F0EFF4;
+  --text-font: 'montserrat';
+  --big-font: 5rem;
+  --2nd-big-font: 4rem;
+  --h2-font: 2rem;
+  --p-font: 1rem;
+}
+
+#works {
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+#works .title {
+  font-size: var(--2nd-big-font);
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+#contact {
+  height: 100vh;
+  background-color: var(--4th-main-color);
+  color: var(--2nd-text-color);
+}
+
+#contact .title {
+  font-size: var(--2nd-big-font);
+  padding: 2.5rem 0;
+  text-align: center;
+}
