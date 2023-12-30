@@ -146,6 +146,10 @@ nav #nav-text a:hover {
     }
   }
 
+  #nav-text.menuParent.d-none li a {
+    display: none;    
+  }
+
   .menuParent.unclicked li a {
     animation: slide-up .3s;
     visibility: hidden;
@@ -184,7 +188,7 @@ nav #nav-text a:hover {
   background-color: var(--bg-color);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 120px 11%;
 }
 
@@ -263,14 +267,14 @@ nav #nav-text a:hover {
 @media screen and (max-width: 600px) {
   #home-text {
     order: 2;
+    margin-top: 25px;
   }
   #me-image {
     order: 1;
   }
 
   #home {
-    justify-content: space-between;
-    padding: 120px 12% 80px 12%;
+    padding: 120px 11% 80px 11%;
     flex-direction: column;
   }
 
@@ -278,7 +282,7 @@ nav #nav-text a:hover {
   color: var(--text-color);
   font-size: 20px;
   font-weight: 500;
-  margin: 25px 0 10px 0;
+  margin: 0 0 10px 0;
 }
 
 #home h1 {
@@ -294,7 +298,7 @@ nav #nav-text a:hover {
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 601px) and (max-width: 1000px) {
   #home-text {
     order: 2;
     margin-top: 50px;
@@ -306,7 +310,7 @@ nav #nav-text a:hover {
   }
   #home {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 }

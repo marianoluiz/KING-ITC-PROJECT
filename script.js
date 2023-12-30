@@ -5,6 +5,15 @@ function animateIcon() {
   menuParent.classList.toggle("change");
   menuParent.classList.toggle("responsive");
   menuParent.classList.toggle("unclicked");
+    
+  if (menuParent.classList.contains("d-none")) {  setTimeout(() => {
+      menuParent.classList.remove("d-none");
+    }, 50);
+  } else {
+    setTimeout(() => {
+      menuParent.classList.add("d-none");
+    }, 300);
+  }
 }
 
 menu.addEventListener("click", animateIcon);
