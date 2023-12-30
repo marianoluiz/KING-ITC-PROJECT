@@ -1,0 +1,122 @@
+:root{
+  --bg-color: #F0EFF4;
+  --main-color: #2541B2;
+  --2nd-main-color: #FAB3A9;
+  --3rd-main-color: #F7F06D;
+  --4th-main-color: #4763cf;
+  --text-color: #333232;
+  --2nd-text-color: #F0EFF4;
+  --text-font: 'montserrat';
+  --big-font: 5rem;
+  --2nd-big-font: 3rem;
+  --h2-font: 2rem;
+  --p-font: 1rem;
+}
+
+#contact {
+  min-height: 100vh;
+  background-color: var(--4th-main-color);
+  color: var(--2nd-text-color);
+  padding: 14px 11% 6px 11%;
+}
+
+#contact .title {
+  font-size: var(--2nd-big-font);
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+.contact-flex {
+  display: flex;
+}
+
+.map {
+  height: 70vh;
+  width: 50%;
+}
+
+.form {
+  width: 50%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333232;
+}
+
+.social-icon-container {
+  margin-top: 25px;
+  font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-icon-container .social-icon {
+  color: rgb(255, 255, 255);
+  padding: 0 10px;
+}
+
+.social-icon-container .social-icon:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 600px) {
+
+  #contact .title {
+    font-size: 2.5rem;
+    padding: 2.5rem 0;
+    text-align: center;
+  }
+  #contact {
+    padding: 0;
+  }
+
+  .map {
+    height: 30vh;
+    width: 100%;
+  }
+
+  .contact-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+  }
+}
+

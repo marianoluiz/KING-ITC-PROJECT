@@ -9,16 +9,21 @@ function animateIcon() {
 
 menu.addEventListener("click", animateIcon);
 
+function checkForm() {
+  const form = document.querySelector('.form');
+  const nameInput = form.querySelector('#name');
+  const emailInput = form.querySelector('#email');
+  const messageInput = form.querySelector('#message');
 
-
-/* 
-function clickMenu() {
-  if (menuParent.className === "menuParent") {
-    menuParent.className = menuParent.className + " responsive";
-    // x.className += " responsive";
+  if (nameInput.checkValidity() && emailInput.checkValidity() && messageInput.checkValidity()) {
+    alert('Thank you for Reaching Out!');;
   } else {
-    menuParent.className = "menuParent";
+    nameInput.reportValidity();
+    emailInput.reportValidity();
+    messageInput.reportValidity();
   }
-} 
-doesnt work idk why it always else here
-*/
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+}
