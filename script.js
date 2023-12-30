@@ -6,14 +6,6 @@ function animateIcon() {
   menuParent.classList.toggle("responsive");
   menuParent.classList.toggle("unclicked");
     
-  if (menuParent.classList.contains("d-none")) {  setTimeout(() => {
-      menuParent.classList.remove("d-none");
-    }, 1);
-  } else {
-    setTimeout(() => {
-      menuParent.classList.add("d-none");
-    }, 100);
-  }
 }
 
 menu.addEventListener("click", animateIcon);

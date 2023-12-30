@@ -145,11 +145,7 @@ nav #nav-text a:hover {
       
     }
   }
-
-  #nav-text.menuParent.d-none li a {
-    display: none;    
-  }
-
+  
   .menuParent.unclicked li a {
     animation: slide-up .3s;
     visibility: hidden;
