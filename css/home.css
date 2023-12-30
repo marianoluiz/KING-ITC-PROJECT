@@ -238,13 +238,14 @@ nav #nav-text a:hover {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 2px;
-  transition: ease all 0.35s;
+
   cursor: pointer;
 }
 
 #home .btn:hover {
   background: var(--text-color);
   box-shadow: 4px 4px var(--main-color);
+  transition: ease all 0.35s;
 }
 
 #me-image {
@@ -313,4 +314,37 @@ nav #nav-text a:hover {
     justify-content: center;
     align-items: center;
   }
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.revealsOnLoad {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.revealsOnLoad.activeOL {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.map {
+  opacity: 0;
+  transition: opacity 5s ease;
+}
+
+.map.api-active {
+  opacity: 1;
 }

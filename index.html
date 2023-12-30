@@ -42,13 +42,13 @@
     <!-- home -->
     <section id="home">
       <div id="home-text">
-        <h5>Hello, I am  </h5>
-        <h1>M. King</h1>
-        <h6>I am a <code>Front-End</code> Developer.</h6>
-        <p>I am an aspiring Full-stack developer. I have some knowledge about coding.  In the future, I want to be an AI engineer or a Software Engineer.</p>
-        <a href="./king-resume.pdf" download="./king-resume.pdf"><button class="btn">Download CV</button></a> 
+        <h5 class="revealsOnLoad">Hello, I am  </h5>
+        <h1 class="revealsOnLoad">M. King</h1>
+        <h6 class="revealsOnLoad">I am a <code>Front-End</code> Developer.</h6>
+        <p class="revealsOnLoad">I am an aspiring Full-stack developer. I have some knowledge about coding.  In the future, I want to be an AI engineer or a Software Engineer.</p>
+        <a href="./king-resume.pdf" download="./king-resume.pdf"><button class="btn revealsOnLoad">Download CV</button></a> 
       </div>
-      <div id="me-image">
+      <div id="me-image" class="revealsOnLoad">
         <img src="./img/nstp-king.jpg" alt="...">
       </div>
     </section>
@@ -59,7 +59,7 @@
     <div id="about-box-container">
         <!-- about box -->
 
-        <div class="about-box one">
+        <div class="about-box one reveal">
 
           <h3 class="about-box-title">Education</h3>
 
@@ -75,7 +75,7 @@
         </div>
         <!-- about box end -->
         <!-- about box -->
-        <div class="about-box two">
+        <div class="about-box two reveal">
           <h3 class="about-box-title">Certifications</h3>
           <div class="text">
             <ul>
@@ -95,13 +95,13 @@
       <section id="languages-section">
         <h1 class="title">Tools</h1>
         <div id="language-container">
-          <div class="img-wrapper">
+          <div class="img-wrapper reveal">
             <img src="./img/logo-html5.png" alt="...">
             <img src="./img/logo-css3.png" alt="...">
             <img src="./img/logo-javascript.png" alt="...">
             <img src="./img/logo-bootstrap.png" alt="...">
           </div>
-          <div class="img-wrapper">
+          <div class="img-wrapper reveal">
             <img src="./img/logo-git.png" alt="...">
             <img src="./img/logo-sublime-text-3.png" alt="...">
             <img src="./img/logo-vscode.png" alt="...">
@@ -113,7 +113,7 @@
   <!-- about end  -->
   <section id="works">
     <h1 class="title">Works</h1>
-    <div class="gallery">
+    <div class="gallery reveal">
       <div class="gallery-item one"></div>
       <div class="gallery-item two"></div>
       <div class="gallery-item three"></div>
@@ -126,7 +126,7 @@
     <div class="contact-flex">
       <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3114.9342546502644!2d121.01080207402796!3d14.740882285762266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b1bd298b4a89%3A0xd412557c873a0f4f!2s268f%20Kabatuhan%2C%20Barangay%20168%2C%20Caloocan%2C%20Metro%20Manila!5e1!3m2!1sen!2sph!4v1703848064704!5m2!1sen!2sph" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
-      <form class="form" onsubmit="handleSubmit(event)">
+      <form class="form reveal" onsubmit="handleSubmit(event)">
         <div class="form-group">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" placeholder="Enter your name" required>
