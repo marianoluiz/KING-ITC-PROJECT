@@ -125,7 +125,7 @@ nav #nav-text a:hover {
 
   .menuParent.responsive li a {
     display: block;
-    background-color: rgba(240,239,244, 0.9);
+    background-color: rgba(255,255,255,0.9);
     text-align: center;
     animation: slide-down .3s;
   }
@@ -185,7 +185,8 @@ nav #nav-text a:hover {
   z-index: -1;
   min-width: 100%;
   min-height: 100vh;
-  background-color: var(--bg-color);
+  background: rgb(215,215,215);
+  background: linear-gradient(0deg, rgba(215,215,215,1) 2%, rgba(255,255,255,1) 100%);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -347,4 +348,80 @@ nav #nav-text a:hover {
 
 .map.api-active {
   opacity: 1;
+}
+
+@media screen and (min-width: 1500px) {
+  
+#nav-text li a {
+  font-size: 2rem;
+}
+
+nav {
+  padding: 20px 11% 20px 11%;
+  background: transparent;
+  width: 100%;
+}
+
+#nav-logo {
+  margin-top: 2px;
+  margin-left: 2px;
+  max-width: 100px; 
+  max-height: 100px;
+}
+
+#home h5 {
+  color: var(--text-color);
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+}
+
+#home h1 {
+  font-size: 6rem;
+  color: var(--text-color);
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+#home h6 {
+  color: var(--text-color);
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+#home p {
+  /* text-align: justify; */
+  color: var(--text-color);
+  max-width: 450px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 2em;
+  margin-bottom: 1.5em;
+}
+
+#home .btn {
+  background: var(--main-color);
+  color: var(--2nd-text-color);
+  box-shadow:  4px 4px var(--text-color);
+  padding: 0 30px;
+  line-height: 55px;
+  display: inline-block;
+  border: 1px solid transparent;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+
+  cursor: pointer;
+}
+
+#me-image {
+  clip-path: polygon(30% 0, 70% 10%, 100% 0, 100% 90%, 70% 100%, 30% 90%, 0 100%, 0 10%);
+  order: 2;
+}
+
+#me-image img {
+  max-height: 500px;
+  max-width: auto;
+}
 }

@@ -14,9 +14,10 @@
 }
 
 #about {
-  background-color: var(--4th-main-color);
+  background: rgb(74,43,207);
+  background: linear-gradient(0deg, rgba(74,43,207,1) 2%, rgba(23,179,187,1) 100%);
   text-align: center;
-  color: var(--2nd-text-color);
+  color: white;
   min-height: 80vh;
   padding: 14px 12% 6px 12%;
 }
@@ -29,23 +30,23 @@
 #about-box-container {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  color: var(--bg-color);
+  color: #333232;
 }
 
 #about .about-box {
   padding: 10px 20px;
   width: 48%;
   border-radius: 10px;
-  background-color: rgba(20, 170, 40, 0.9);
+  background-color: rgba(255,255,255,1);
   text-align: start;
+  box-shadow: 4px 4px 4px;
 }
 
 #about .about-box-title {
   font-size: 2rem;
-  color: rgba(253, 249, 10, 1);;
   padding: 10px 0;
   text-align: center;
+  color: #2541B2;
 }
 
 .about-box .text {
@@ -64,7 +65,8 @@
 
 #languages-section {
   margin-top: 25px;
-  min-height: 100vh;
+  color: white;
+  margin-bottom: 50px;
 }
 
 #language-container div img {
@@ -96,7 +98,6 @@
 
   #about .about-box-title {
     font-size: 1.2rem;
-    color: rgba(253, 249, 10, 1);;
     padding: 5px 0;
   }
   #about .about-box.two {
@@ -121,6 +122,9 @@
 
   #about {
     padding-bottom: 20px;
+  }
+  #languages-section {
+    margin-bottom: 0px;
   }
 }
 

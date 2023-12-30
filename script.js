@@ -45,7 +45,7 @@ function reveal() {
   for ( i = 0; i < reveals.length; i++) {
     const windowHeight = window.innerHeight;
     const revealTop = reveals[i].getBoundingClientRect().top;
-    const revealPoint = 150;
+    const revealPoint = 50;
 
     if ( revealTop < windowHeight - revealPoint ) {
       reveals[i].classList.add('active');
@@ -57,7 +57,7 @@ function reveal() {
       const api = document.querySelector('.map');
       const apiTop = api.getBoundingClientRect().top;
 
-      if (apiTop < window.innerHeight - 150) {
+      if (apiTop < window.innerHeight - revealPoint) {
         api.classList.add('api-active');
       } else {
         api.classList.remove('api-active');

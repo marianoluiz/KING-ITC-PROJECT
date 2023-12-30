@@ -15,7 +15,8 @@
 
 #contact {
   min-height: 100vh;
-  background-color: var(--4th-main-color);
+  background: rgb(74,43,207);
+  background: linear-gradient(0deg, rgba(74,43,207,1) 2%, rgba(23,179,187,1) 100%);
   color: var(--2nd-text-color);
   padding: 14px 11% 6px 11%;
 }
@@ -57,6 +58,7 @@ textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  box-shadow: 2px 2px 2px;
 }
 
 
@@ -69,11 +71,13 @@ button[type="submit"] {
   color: var(--bg-color);
   cursor: pointer;
   transition: background-color 0.3s ease;
+  box-shadow: 2px 2px 2px black;
 }
 
 button[type="submit"]:hover {
   background-color: rgba(255, 255, 255, 0.8);
   color: #333232;
+  box-shadow: 2px 2px 2px;
 }
 
 .social-icon-container {
@@ -113,6 +117,23 @@ button[type="submit"]:hover {
     flex-direction: column;
   }
 
+  .form {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .map {
+    height: 30vh;
+    width: 100%;
+  }
+  .contact-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  
   .form {
     width: 100%;
     padding: 20px;
