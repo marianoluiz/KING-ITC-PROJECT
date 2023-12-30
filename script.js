@@ -8,11 +8,11 @@ function animateIcon() {
     
   if (menuParent.classList.contains("d-none")) {  setTimeout(() => {
       menuParent.classList.remove("d-none");
-    }, 50);
+    }, 1);
   } else {
     setTimeout(() => {
       menuParent.classList.add("d-none");
-    }, 300);
+    }, 100);
   }
 }
 
