@@ -125,6 +125,10 @@ button[type="submit"]:hover {
 }
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
+  #contact {
+    padding: 0;
+  }
+
   .map {
     height: 30vh;
     width: 100%;
@@ -138,5 +142,6 @@ button[type="submit"]:hover {
     width: 100%;
     padding: 20px;
     border-radius: 5px;
+    padding: 50px 11% 6px 11%;
   }
 }
