@@ -182,7 +182,7 @@ nav #nav-text a:hover {
   min-width: 100%;
   min-height: 100vh;
   background: rgb(215,215,215);
-  background: linear-gradient(0deg, rgba(215,215,215,1) 2%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(0deg, rgba(215,215,215,1) 30%, rgba(255,255,255,1) 100%);
   display: flex;
   align-items: center;
   justify-content: space-around;

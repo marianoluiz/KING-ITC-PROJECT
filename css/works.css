@@ -15,8 +15,10 @@
 
 #works {
   min-height: 100vh;
+/*  background: rgb(74,43,207);
+  background: linear-gradient(0deg, rgba(23,179,187,1) 20%, rgba(74,43,207,1) 100%);*/
   background: rgb(215,215,215);
-  background: linear-gradient(0deg, rgba(215,215,215,1) 2%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(0deg, rgba(215,215,215,1) 30%, rgba(255,255,255,1) 100%);
   padding: 14px 11% 6px 11%;
 }
 
@@ -24,6 +26,7 @@
   font-size: var(--2nd-big-font);
   padding: 2.5rem 0;
   text-align: center;
+  /*color: var(--2nd-text-color);*/
   color: var(--text-color);
 }
 
@@ -42,7 +45,7 @@
 #works .gallery .gallery-item.one {
   background-image: url(../img/p1/home.png);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   transform: scale(1);
   transition: ease-in-out .3s;
@@ -76,7 +79,7 @@
 #works .gallery .gallery-item.two {
   background-image: url(../img/p2/home.png);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   transform: scale(1);
   transition: ease-in-out .3s;
@@ -108,7 +111,7 @@
 #works .gallery .gallery-item.three {
   background-image: url(../img/p3/home.png);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   transform: scale(1);
   transition: ease-in-out .3s;
@@ -139,7 +142,7 @@
 #works .gallery .gallery-item.four {
   background-image: url(../img/p4/home.png);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   transform: scale(1);
   transition: ease-in-out .3s;
@@ -201,6 +204,42 @@
     grid-template-columns: repeat(1,1fr);
     padding-bottom: 25px;
   }
+  #works .gallery .gallery-item.one {
+  background-image: url(../img/p1/home.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(1);
+  transition: ease-in-out .3s;
+}
+
+#works .gallery .gallery-item.two {
+  background-image: url(../img/p2/home.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(1);
+  transition: ease-in-out .3s;
+}
+
+#works .gallery .gallery-item.three {
+  background-image: url(../img/p3/home.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(1);
+  transition: ease-in-out .3s;
+}
+
+#works .gallery .gallery-item.four {
+  background-image: url(../img/p4/home.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(1);
+  transition: ease-in-out .3s;
+}
+
 }
 
 
